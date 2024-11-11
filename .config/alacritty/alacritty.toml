@@ -1,0 +1,171 @@
+
+live_config_reload = true
+
+[shell]
+args = ['--login']
+program = "/usr/bin/fish"
+
+[cursor]
+style = "Beam"
+
+[window.padding]
+x = 14
+y = 14
+
+[window.dimensions]
+columns = 90
+lines = 25
+
+[colors.normal]
+black = "#21222c"
+red = "#ff5555"
+green = "#50fa7b"
+yellow = "#f1fa8c"
+blue = "#bd93f9"
+magenta = "#ff79c6"
+cyan = "#8be9fd"
+white = "#f8f8f2"
+
+[colors.primary]
+background = "#282a36"
+foreground = "#f8f8f2"
+
+[colors.cursor]
+text = "CellBackground"
+cursor = "CellForeground"
+
+# alacritty.toml
+
+[env]
+TERM = "alacritty"
+
+[window]
+decorations     = "None"
+dynamic_padding = false
+dynamic_title   = false
+opacity         = 0.9
+title           = "Alacritty"
+startup_mode = "Windowed"
+
+[scrolling]
+history = 12000
+
+[font]
+builtin_box_drawing = false
+size = 13.0
+
+[font.glyph_offset]
+x = 0
+y = 0
+
+[font.offset]
+x = 0
+y = 0
+
+[font.bold] 
+style  = "Bold"
+
+[font.bold_italic]
+style  = "Bold Italic"
+
+[colors.bright]
+black   = "#5C5C5C"
+blue    = "#6699CC"
+cyan    = "#5FB3B3"
+green   = "#A6BC99"
+magenta = "#824F82"
+red     = "#E57373"
+white   = "#F3F4F5"
+yellow  = "#FAC863"
+
+[colors.footer_bar]
+background = "#C0C5CE"
+foreground = "#232323"
+
+[colors.hints.end]
+background = "CellBackground"
+foreground = "CellForeground"
+
+[colors.hints.start]
+background = "CellBackground"
+foreground = "CellForeground"
+
+[colors.line_indicator]
+background = "None"
+foreground = "None"
+
+[colors.search.focused_match]
+background = "CellBackground"
+foreground = "CellForeground"
+
+[colors.search.matches]
+background = "CellBackground"
+foreground = "CellForeground"
+
+[colors.selection]
+background = "CellForeground"
+text       = "CellBackground"
+
+[colors.vi_mode_cursor]
+cursor = "CellForeground"
+text   = "CellBackground"
+
+[bell]
+animation = "EaseOutExpo"
+color     = "#C0C5CE"
+command   = "None"
+duration  = 0
+
+[selection]
+save_to_clipboard     = true
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+
+[[keyboard.bindings]]
+action = "Paste"
+key    = "V"
+mods   = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "Copy"
+key    = "C"
+mods   = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "ScrollPageUp"
+key    = "PageUp"
+mods   = "Shift"
+
+[[keyboard.bindings]]
+action = "ScrollPageDown"
+key    = "PageDown"
+mods   = "Shift"
+
+[[keyboard.bindings]]
+action = "ScrollToTop"
+key    = "Home"
+mods   = "Shift"
+
+[[keyboard.bindings]]
+action = "ScrollToBottom"
+key    = "End"
+mods   = "Shift"
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key    = "Period"
+mods   = "Control"
+
+[[keyboard.bindings]]
+action = "DecreaseFontSize"
+key    = "Comma"
+mods   = "Control"
+
+[mouse]
+hide_when_typing = true
+
+[debug]
+highlight_damage   = false
+log_level          = "Warn"
+persistent_logging = false
+print_events       = false
+render_timer       = false
